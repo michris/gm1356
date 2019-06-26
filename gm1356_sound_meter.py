@@ -158,9 +158,10 @@ def get_dB(value1, value2):
 
 def sample_handler(data):
     """ Data handler callback function. Log data in a csv file and a raw log file """
-    t = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")[:16]                     # Show msec with only 2 numbers
-    csv_logger.info(f"{t},{get_dB(data[1], data[2]):.1f}, {get_units(data[3])}")
-    raw_logger.info(f"{t},{get_dB(data[1], data[2]):.1f}, {get_units(data[3])}, {get_speed(data[3])}, {get_max_lock(data[3])}, {get_range(data[3])}, {data}")
+    #t = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")[:16]                     # Show msec with only 2 numbers
+    t = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:22]                     # Show msec with only 2 numbers
+    csv_logger.info(f"{t},{get_dB(data[1], data[2]):.1f},{get_units(data[3])}")
+    raw_logger.info(f"{t},{get_dB(data[1], data[2]):.1f},{get_units(data[3])},{get_speed(data[3])},{get_max_lock(data[3])},{get_range(data[3])},{data}")
     #print(f"Raw data: {data} ; {get_dB(data[1], data[2]):.1f}")
     return
 
