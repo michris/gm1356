@@ -13,3 +13,7 @@ Inspiration & thanks to :
 - https://www.wenbiancheng.com/question/python/16357756-How%20to%20send%20hid%20data%20to%20device%20using%20python%20/%20pywinusb?
 - http://www.swblabs.com/article/pi-soundmeter (WS1361 digital sound level meter)
 - https://freeusbanalyzer.com/
+
+---
+
+<a href="https://www.buymeacoffee.com/Vc3P0zg9X" target="_blank"><img src="buymeacoffee.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
